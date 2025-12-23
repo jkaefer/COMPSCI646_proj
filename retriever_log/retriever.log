@@ -1,0 +1,12 @@
+127.0.0.1
+8000
+2025-10-19 10:43:22,755 — INFO — retriever — Using device: cpu
+2025-10-19 10:43:33,408 — INFO — retriever — Loaded 2025 document chunks
+2025-10-19 10:43:33,411 — INFO — retriever — SparseRetrieval initialized
+INFO:     Started server process [35103]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+/tmp/tmpfajvjqvj: line 3: 35103 Killed                  uvicorn --app-dir /content/drive/MyDrive/mRAG_and_MSRS_source/retriever_setup sparse_retrieval_cpu:app --host 127.0.0.1 --port 8000
+
+ERROR conda.cli.main_run:execute(125): `conda run uvicorn --app-dir /content/drive/MyDrive/mRAG_and_MSRS_source/retriever_setup sparse_retrieval_cpu:app --host 127.0.0.1 --port 8000` failed. (See above for error)

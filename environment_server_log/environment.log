@@ -1,0 +1,69 @@
+127.0.0.1
+8200
+
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.49it/s]
+
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  1.49it/s]
+
+INFO:     Started server process [14981]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+/usr/local/envs/train_and_test/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+
+INFO 10-23 13:06:23 __init__.py:207] Automatically detected platform cuda.
+INFO 10-23 13:06:23 api_server.py:912] vLLM API server version 0.7.3
+INFO 10-23 13:06:23 api_server.py:913] args: Namespace(subparser='serve', model_tag='Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4', config='', host='127.0.0.1', port=8200, uvicorn_log_level='info', allow_credentials=False, allowed_origins=['*'], allowed_methods=['*'], allowed_headers=['*'], api_key=None, lora_modules=None, prompt_adapters=None, chat_template=None, chat_template_content_format='auto', response_role='assistant', ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_cert_reqs=0, root_path=None, middleware=[], return_tokens_as_token_ids=False, disable_frontend_multiprocessing=False, enable_request_id_headers=False, enable_auto_tool_choice=False, enable_reasoning=False, reasoning_parser=None, tool_call_parser=None, tool_parser_plugin='', model='Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4', task='auto', tokenizer=None, skip_tokenizer_init=False, revision=None, code_revision=None, tokenizer_revision=None, tokenizer_mode='auto', trust_remote_code=False, allowed_local_media_path=None, download_dir='/content/drive/MyDrive/mRAG_and_MSRS_source/vllm_cache', load_format='auto', config_format=<ConfigFormat.AUTO: 'auto'>, dtype='half', kv_cache_dtype='auto', max_model_len=16000, guided_decoding_backend='xgrammar', logits_processor_pattern=None, model_impl='auto', distributed_executor_backend=None, pipeline_parallel_size=1, tensor_parallel_size=1, max_parallel_loading_workers=None, ray_workers_use_nsight=False, block_size=None, enable_prefix_caching=None, disable_sliding_window=False, use_v2_block_manager=True, num_lookahead_slots=0, seed=0, swap_space=0.0, cpu_offload_gb=0, gpu_memory_utilization=0.3, num_gpu_blocks_override=None, max_num_batched_tokens=None, max_num_partial_prefills=1, max_long_partial_prefills=1, long_prefill_token_threshold=0, max_num_seqs=None, max_logprobs=20, disable_log_stats=False, quantization=None, rope_scaling=None, rope_theta=None, hf_overrides=None, enforce_eager=True, max_seq_len_to_capture=8192, disable_custom_all_reduce=False, tokenizer_pool_size=0, tokenizer_pool_type='ray', tokenizer_pool_extra_config=None, limit_mm_per_prompt=None, mm_processor_kwargs=None, disable_mm_preprocessor_cache=False, enable_lora=False, enable_lora_bias=False, max_loras=1, max_lora_rank=16, lora_extra_vocab_size=256, lora_dtype='auto', long_lora_scaling_factors=None, max_cpu_loras=None, fully_sharded_loras=False, enable_prompt_adapter=False, max_prompt_adapters=1, max_prompt_adapter_token=0, device='auto', num_scheduler_steps=1, multi_step_stream_outputs=True, scheduler_delay_factor=0.0, enable_chunked_prefill=None, speculative_model=None, speculative_model_quantization=None, num_speculative_tokens=None, speculative_disable_mqa_scorer=False, speculative_draft_tensor_parallel_size=None, speculative_max_model_len=None, speculative_disable_by_batch_size=None, ngram_prompt_lookup_max=None, ngram_prompt_lookup_min=None, spec_decoding_acceptance_method='rejection_sampler', typical_acceptance_sampler_posterior_threshold=None, typical_acceptance_sampler_posterior_alpha=None, disable_logprobs_during_spec_decoding=None, model_loader_extra_config=None, ignore_patterns=[], preemption_mode=None, served_model_name=None, qlora_adapter_name_or_path=None, otlp_traces_endpoint=None, collect_detailed_traces=None, disable_async_output_proc=False, scheduling_policy='fcfs', scheduler_cls='vllm.core.scheduler.Scheduler', override_neuron_config=None, override_pooler_config=None, compilation_config=None, kv_transfer_config=None, worker_cls='auto', generation_config=None, override_generation_config=None, enable_sleep_mode=False, calculate_kv_scales=False, additional_config=None, disable_log_requests=False, max_log_len=None, disable_fastapi_docs=False, enable_prompt_tokens_details=False, dispatch_function=<function ServeSubcommand.cmd at 0x784e1f4eea20>)
+INFO 10-23 13:06:23 api_server.py:209] Started engine process with PID 15020
+INFO 10-23 13:06:33 __init__.py:207] Automatically detected platform cuda.
+INFO 10-23 13:06:36 config.py:549] This model supports multiple tasks: {'embed', 'score', 'generate', 'classify', 'reward'}. Defaulting to 'generate'.
+WARNING 10-23 13:06:38 config.py:628] gptq quantization is not fully optimized yet. The speed can be slower than non-quantized models.
+WARNING 10-23 13:06:38 cuda.py:95] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used
+WARNING 10-23 13:06:38 config.py:685] Async output processing is not supported on the current platform type cuda.
+INFO 10-23 13:06:44 config.py:549] This model supports multiple tasks: {'score', 'reward', 'generate', 'classify', 'embed'}. Defaulting to 'generate'.
+WARNING 10-23 13:06:45 config.py:628] gptq quantization is not fully optimized yet. The speed can be slower than non-quantized models.
+WARNING 10-23 13:06:45 cuda.py:95] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used
+WARNING 10-23 13:06:45 config.py:685] Async output processing is not supported on the current platform type cuda.
+INFO 10-23 13:06:45 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.3) with config: model='Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4', speculative_config=None, tokenizer='Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=16000, download_dir='/content/drive/MyDrive/mRAG_and_MSRS_source/vllm_cache', load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=gptq, enforce_eager=True, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=False, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[],"max_capture_size":0}, use_cached_outputs=True, 
+INFO 10-23 13:06:46 cuda.py:178] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 10-23 13:06:46 cuda.py:226] Using XFormers backend.
+INFO 10-23 13:06:47 model_runner.py:1110] Starting to load model Qwen/Qwen2.5-0.5B-Instruct-GPTQ-Int4...
+INFO 10-23 13:06:47 weight_utils.py:254] Using model weights format ['*.safetensors']
+INFO 10-23 13:06:47 weight_utils.py:304] No model.safetensors.index.json found in remote.
+INFO 10-23 13:06:48 model_runner.py:1115] Loading model weights took 0.4312 GB
+INFO 10-23 13:06:50 worker.py:267] Memory profiling takes 1.33 seconds
+INFO 10-23 13:06:50 worker.py:267] the current vLLM instance can use total_gpu_memory (14.74GiB) x gpu_memory_utilization (0.30) = 4.42GiB
+INFO 10-23 13:06:50 worker.py:267] model weights take 0.43GiB; non_torch_memory takes 0.05GiB; PyTorch activation peak memory takes 1.41GiB; the rest of the memory reserved for KV Cache is 2.53GiB.
+INFO 10-23 13:06:50 executor_base.py:111] # cuda blocks: 13813, # CPU blocks: 0
+INFO 10-23 13:06:50 executor_base.py:116] Maximum concurrency for 16000 tokens per request: 13.81x
+INFO 10-23 13:06:50 llm_engine.py:436] init engine (profile, create kv cache, warmup model) took 1.88 seconds
+INFO 10-23 13:06:50 api_server.py:958] Starting vLLM API server on http://127.0.0.1:8200
+INFO 10-23 13:06:50 launcher.py:23] Available routes are:
+INFO 10-23 13:06:50 launcher.py:31] Route: /openapi.json, Methods: GET, HEAD
+INFO 10-23 13:06:50 launcher.py:31] Route: /docs, Methods: GET, HEAD
+INFO 10-23 13:06:50 launcher.py:31] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+INFO 10-23 13:06:50 launcher.py:31] Route: /redoc, Methods: GET, HEAD
+INFO 10-23 13:06:50 launcher.py:31] Route: /health, Methods: GET
+INFO 10-23 13:06:50 launcher.py:31] Route: /ping, Methods: POST, GET
+INFO 10-23 13:06:50 launcher.py:31] Route: /tokenize, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /detokenize, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/models, Methods: GET
+INFO 10-23 13:06:50 launcher.py:31] Route: /version, Methods: GET
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/chat/completions, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/completions, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/embeddings, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /pooling, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /score, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/score, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/audio/transcriptions, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /rerank, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v1/rerank, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /v2/rerank, Methods: POST
+INFO 10-23 13:06:50 launcher.py:31] Route: /invocations, Methods: POST
+INFO 10-23 13:15:04 launcher.py:62] Shutting down FastAPI HTTP server.
+
